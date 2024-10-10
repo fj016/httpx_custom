@@ -1,7 +1,9 @@
 module github.com/projectdiscovery/httpx
 
 go 1.21
-replace github.com/projectdiscovery/httpx => github.com/fj016/httpx_custom latest
+
+replace github.com/projectdiscovery/httpx => github.com/fj016/httpx_custom v1.6.8
+
 require (
 	github.com/Mzack9999/gcache v0.0.0-20230410081825-519e28eab057
 	github.com/PuerkitoBio/goquery v1.8.1
