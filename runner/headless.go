@@ -128,7 +128,7 @@ func (b *Browser) ScreenshotWithBody(url string, timeout time.Duration, headers 
 	}
 	_ = page.WaitIdle(1 * time.Second)
 
-	screenshot, err := page.Screenshot(true, &proto.PageCaptureScreenshot{})
+	screenshot, err := page.Screenshot(false, &proto.PageCaptureScreenshot{})
 	if err != nil {
 		return nil, "", err
 	}
